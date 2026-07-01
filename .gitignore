@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node (caso futuramente seja adicionado)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos temporários
+*.log

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imersão IA PhD | Engenharia de Sistemas Agênticos em Maceió</title>
+  <meta name="description"
+    content="Construa funcionários de IA que operam, decidem e executam tarefas do seu negócio na Imersão Presencial IA PhD em Maceió.">
+
+  <!-- Fonts: Sora (headings) and Inter Tight (clean body/subheadings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;1,300&family=Sora:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <noscript>
+    <style>
+      .scroll-reveal {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        filter: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <!-- Subtle Technical Grid Overlay -->
+  <div class="technical-grid" aria-hidden="true"></div>
+
+  <!-- Minimal Navigation Bar -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#" class="logo-group" aria-label="Imersão IA PhD Home">
+        <img src="assets/logo.png" alt="IA PhD Logo" class="main-logo">
+        <span class="logo-text">Imersão IA PhD</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navegação principal">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#palestrantes" class="nav-link">Palestrantes</a>
+        <a href="#local" class="nav-link">Local</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#inscricao" class="btn btn-outline-nav">Garantir Vaga</a>
+      </div>
+
+      <!-- Hamburger Menu Button -->
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <!-- Left Column -->
+        <div class="hero-content">
+          <div class="hero-indicators scroll-reveal">
+            <span class="indicator">Maceió - AL</span>
+            <span class="indicator-separator"></span>
+            <span class="indicator">Presencial</span>
+            <span class="indicator-separator"></span>
+            <span class="indicator">Vagas Limitadas</span>
+          </div>
+          
+          <h1 class="hero-headline scroll-reveal" style="transition-delay: 0.1s;">Domine a Engenharia de Sistemas Agênticos</h1>
+          <p class="hero-subheadline scroll-reveal" style="transition-delay: 0.2s;">
+            Construa funcionários de IA que operam, decidem e executam tarefas reais do seu negócio com método e segurança em nossa imersão intensiva.
+          </p>
+          
+          <div class="hero-actions scroll-reveal" style="transition-delay: 0.3s;">
+            <a href="#inscricao" class="btn btn-primary">Garantir minha vaga</a>
+            <a href="#cronograma" class="btn btn-text">Ver cronograma <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="hero-visual scroll-reveal" style="transition-delay: 0.4s;">
+          <div class="video-wrapper">
+            <video id="hero-video" width="100%" autoplay muted loop playsinline style="border-radius: 12px; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16/9;">
+              <source src="assets/IMG_9418.mp4" type="video/mp4">
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="custom-video-controls">
+              <button id="play-pause-btn" class="ctrl-btn" aria-label="Pausar">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+              </button>
+              <button id="mute-unmute-btn" class="ctrl-btn" aria-label="Ativar som">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo Ticker Section -->
+    <section class="logo-ticker-section">
+      <div class="ticker-container scroll-reveal">
+        <p class="ticker-label">Empresas e profissionais que já participaram das imersões anteriores</p>
+        <div class="ticker-track">
+          <!-- Group 1 -->
+          <div class="ticker-group">
+            <div class="ticker-logo">TechCorp</div>
+            <div class="ticker-logo">Innovate</div>
+            <div class="ticker-logo">Global Sys</div>
+            <div class="ticker-logo">Nexus AI</div>
+            <div class="ticker-logo">Vanguard</div>
+          </div>
+          <!-- Group 2 (Duplicate for infinite loop) -->
+          <div class="ticker-group" aria-hidden="true">
+            <div class="ticker-logo">TechCorp</div>
+            <div class="ticker-logo">Innovate</div>
+            <div class="ticker-logo">Global Sys</div>
+            <div class="ticker-logo">Nexus AI</div>
+            <div class="ticker-logo">Vanguard</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Previous Edition Section -->
+    <section class="previous-edition-section" id="sobre">
+      <div class="pe-container">
+        <div class="pe-content scroll-reveal">
+          <span class="section-label">A Experiência</span>
+          <h2 class="section-title">Muito além da teoria. Construção real.</h2>
+          <p class="section-desc">
+            A Imersão Presencial IA PhD não é um curso. É um ambiente de experimentação intensivo onde sua equipe constrói e implanta o primeiro funcionário agêntico do zero. Sem setups complexos, focado em método e resultado.
+          </p>
+        </div>
+        
+        <div class="pe-stats scroll-reveal" style="transition-delay: 0.2s;">
+          <div class="stat-item">
+            <span class="stat-number">+200</span>
+            <span class="stat-label">Profissionais formados</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">+50</span>
+            <span class="stat-label">Agentes construídos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Aprovação prática</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Gallery Section -->
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <div class="gallery-header scroll-reveal">
+          <span class="section-label">Galeria</span>
+          <h2 class="section-title">O que acontece na imersão</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Item 1: Large portrait -->
+          <div class="gallery-item item-large scroll-reveal">
+            <img src="assets/galeria-1.jpg" alt="Imersão IA PhD Galeria 1" class="gallery-img">
+          </div>
+          <!-- Item 2: Landscape top right -->
+          <div class="gallery-item item-landscape scroll-reveal" style="transition-delay: 0.1s;">
+            <img src="assets/galeria-2.jpg" alt="Imersão IA PhD Galeria 2" class="gallery-img">
+          </div>
+          <!-- Item 3: Square bottom right -->
+          <div class="gallery-item item-square scroll-reveal" style="transition-delay: 0.2s;">
+            <img src="assets/galeria-3.jpg" alt="Imersão IA PhD Galeria 3" class="gallery-img">
+          </div>
+          <!-- Item 4: Wide bottom -->
+          <div class="gallery-item item-wide scroll-reveal">
+            <img src="assets/galeria-4.jpg" alt="Imersão IA PhD Galeria 4" class="gallery-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aftermovie Section -->
+    <section class="aftermovie-section">
+      <div class="aftermovie-container scroll-reveal">
+        <div class="aftermovie-wrapper">
+          <div class="aftermovie-placeholder">
+            <svg class="play-icon large-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+          </div>
+        </div>
+        <div class="aftermovie-caption">
+          <p>Assista ao Aftermovie da última edição em São Paulo</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differentials Section -->
+    <section class="differentials-section">
+      <div class="diff-container">
+        <div class="diff-header scroll-reveal">
+          <span class="section-label">Diferenciais</span>
+          <h2 class="section-title">O que nos separa do mercado</h2>
+        </div>
+        <div class="diff-grid">
+          <div class="diff-card scroll-reveal">
+            <div class="diff-icon">01</div>
+            <h3 class="diff-title">Sem teoria vazia</h3>
+            <p class="diff-desc">Enquanto a maioria discute o futuro, nós construímos ferramentas que resolvem os problemas de hoje na sua empresa.</p>
+          </div>
+          <div class="diff-card scroll-reveal" style="transition-delay: 0.1s;">
+            <div class="diff-icon">02</div>
+            <h3 class="diff-title">Mão na massa</h3>
+            <p class="diff-desc">Não é sobre assistir palestras. É sobre sentar com seu time e codificar o primeiro funcionário agêntico do seu negócio.</p>
+          </div>
+          <div class="diff-card scroll-reveal" style="transition-delay: 0.2s;">
+            <div class="diff-icon">03</div>
+            <h3 class="diff-title">Framework validado</h3>
+            <p class="diff-desc">Utilizamos o mesmo método aplicado em empresas de alto padrão para escalar operações através de inteligência artificial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section" id="cronograma">
+      <div class="schedule-container">
+        <div class="schedule-header scroll-reveal">
+          <span class="section-label">A ROTINA</span>
+          <h2 class="section-title">Programação do evento</h2>
+        </div>
+        <div class="schedule-grid">
+          <!-- Schedule Item 1 -->
+          <div class="schedule-item scroll-reveal">
+            <div class="schedule-time">08:00 - 09:00</div>
+            <div class="schedule-content">
+              <h4 class="schedule-event">Credenciamento & Networking</h4>
+              <p>Recepção dos participantes e café de boas-vindas.</p>
+            </div>
+          </div>
+          <!-- Schedule Item 2 -->
+          <div class="schedule-item scroll-reveal">
+            <div class="schedule-time">09:00 - 12:30</div>
+            <div class="schedule-content">
+              <h4 class="schedule-event">Mergulho Prático</h4>
+              <p>Sessões de construção guiada, estruturação de fluxos lógicos e integração de IA.</p>
+            </div>
+          </div>
+          <!-- Schedule Item 3 -->
+          <div class="schedule-item scroll-reveal">
+            <div class="schedule-time">12:30 - 14:00</div>
+            <div class="schedule-content">
+              <h4 class="schedule-event">Intervalo (Almoço Livre)</h4>
+            </div>
+          </div>
+          <!-- Schedule Item 4 -->
+          <div class="schedule-item scroll-reveal">
+            <div class="schedule-time">14:00 - 18:00</div>
+            <div class="schedule-content">
+              <h4 class="schedule-event">Execução & Escala</h4>
+              <p>Testes de performance, depuração de erros em agentes e dinâmicas de segurança corporativa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="speaker-section" id="palestrantes">
+      <div class="speaker-container">
+        <div class="speaker-visual scroll-reveal">
+          <div class="speaker-photo-placeholder"></div>
+        </div>
+        <div class="speaker-content scroll-reveal" style="transition-delay: 0.2s;">
+          <span class="section-label">Quem Lidera</span>
+          <h2 class="section-title">Bruno Bessa, PhD</h2>
+          <p class="speaker-role">Fundador & Engenheiro Chefe na IA PhD</p>
+          <div class="speaker-bio">
+            <p>Pesquisador, professor e empreendedor que une rigor acadêmico à implementação real de inteligência artificial corporativa.</p>
+            <p>Com mais de 10 anos de experiência em pesquisa acadêmica e mercado, Bruno é o arquiteto por trás da metodologia que está transformando grandes corporações em organizações totalmente agênticas.</p>
+          </div>
+          <div class="speaker-badges">
+            <span class="badge">PhD em Sistemas de IA</span>
+            <span class="badge">+15 anos de tecnologia</span>
+            <span class="badge">Especialista em LLM Orchestration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="test-container">
+        <div class="test-header scroll-reveal">
+          <span class="section-label">Prova Social</span>
+          <h2 class="section-title">O que dizem os participantes</h2>
+        </div>
+        <div class="test-grid">
+          <!-- Text Testimonial -->
+          <div class="test-card scroll-reveal">
+            <p class="test-quote">"A imersão mudou completamente a nossa percepção sobre inteligência artificial. Saímos do evento com o nosso primeiro agente já rodando internamente."</p>
+            <div class="test-author">
+              <div class="test-avatar"></div>
+              <div class="test-info">
+                <span class="test-name">Carlos Eduardo</span>
+                <span class="test-role">CTO, Tech Solutions</span>
+              </div>
+            </div>
+          </div>
+          <!-- Video Testimonial Placeholder -->
+          <div class="test-card-video scroll-reveal" style="transition-delay: 0.1s;">
+            <div class="test-video-placeholder">
+              <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+            </div>
+          </div>
+          <!-- Text Testimonial -->
+          <div class="test-card scroll-reveal" style="transition-delay: 0.2s;">
+            <p class="test-quote">"O nível técnico é altíssimo, mas a metodologia do Bruno Bessa torna tudo tangível. Não é apenas mais um evento sobre IA, é construção pura."</p>
+            <div class="test-author">
+              <div class="test-avatar"></div>
+              <div class="test-info">
+                <span class="test-name">Mariana Silva</span>
+                <span class="test-role">Diretora de Inovação</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="local">
+      <div class="location-container">
+        <div class="location-content scroll-reveal">
+          <span class="section-label">O Local</span>
+          <h2 class="section-title">Maceió, Alagoas</h2>
+          <p class="section-desc">Uma imersão de altíssimo nível em uma das cidades mais bonitas do Brasil. Concilie conhecimento de fronteira com um ambiente inspirador.</p>
+          <div class="location-details">
+            <div class="loc-item">
+              <h4 class="loc-title">Data</h4>
+              <p>A ser anunciada</p>
+            </div>
+            <div class="loc-item">
+              <h4 class="loc-title">Local</h4>
+              <p>Centro de Convenções Premium (A definir)</p>
+            </div>
+          </div>
+        </div>
+        <div class="location-visual scroll-reveal" style="transition-delay: 0.2s;">
+          <div class="map-placeholder">
+            <span>Maceió - AL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <div class="faq-header scroll-reveal">
+          <h2 class="section-title">Perguntas Frequentes</h2>
+        </div>
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item scroll-reveal">
+            <button class="faq-question">
+              Preciso ser programador para participar?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Não. A imersão é projetada tanto para gestores quanto para profissionais técnicos. Focamos em arquitetura, orquestração e uso de plataformas que facilitam a criação de agentes sem a necessidade de codificação profunda, embora conhecimentos básicos de lógica sejam recomendados.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="faq-item scroll-reveal">
+            <button class="faq-question">
+              O que vou sair construindo?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Você sairá com um funcionário agêntico funcional, integrado aos sistemas ou bases de dados da sua empresa, pronto para operar e resolver um problema específico que desenharemos juntos durante a imersão.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="faq-item scroll-reveal">
+            <button class="faq-question">
+              Posso levar minha equipe?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Sim, temos condições especiais para grupos corporativos. A construção de agentes em equipe durante a imersão tem se mostrado o modelo mais eficiente de implementação pós-evento.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section" id="inscricao">
+      <div class="cta-container scroll-reveal">
+        <h2 class="cta-title">A mudança começa na sua operação</h2>
+        <p class="cta-desc">Transforme a eficiência da sua empresa construindo funcionários de IA que executam tarefas reais, 24 horas por dia.</p>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-primary">Garantir minha vaga</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 IA PhD. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
