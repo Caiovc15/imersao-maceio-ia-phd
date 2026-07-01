@@ -80,4 +80,157 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // --- Gallery Randomization & Modal Logic ---
+  
+  // VAMOS COLOCAR TODAS AS FOTOS AQUI!
+  // Você pode adicionar novas fotos copiando e colando uma linha e trocando o nome da imagem.
+  const allPhotos = [
+    'assets/IMG_9278.JPG.jpeg',
+    'assets/IMG_9279.JPG.jpeg',
+    'assets/IMG_9280.JPG.jpeg',
+    'assets/IMG_9281.JPG.jpeg',
+    'assets/IMG_9282.JPG.jpeg',
+    'assets/IMG_9283.JPG.jpeg',
+    'assets/IMG_9284.JPG.jpeg',
+    'assets/IMG_9285.JPG.jpeg',
+    'assets/IMG_9286.JPG.jpeg',
+    'assets/IMG_9287.JPG.jpeg',
+    'assets/IMG_9288.JPG.jpeg',
+    'assets/IMG_9289.JPG.jpeg',
+    'assets/IMG_9290.JPG.jpeg',
+    'assets/IMG_9291.JPG.jpeg',
+    'assets/IMG_9292.JPG.jpeg',
+    'assets/IMG_9293.JPG.jpeg',
+    'assets/IMG_9294.JPG.jpeg',
+    'assets/IMG_9295.JPG.jpeg',
+    'assets/IMG_9296.JPG.jpeg',
+    'assets/IMG_9297.JPG.jpeg',
+    'assets/IMG_9299.JPG.jpeg',
+    'assets/IMG_9300.JPG.jpeg',
+    'assets/IMG_9301.JPG.jpeg',
+    'assets/IMG_9302.JPG.jpeg',
+    'assets/IMG_9303.JPG.jpeg',
+    'assets/IMG_9304.JPG.jpeg',
+    'assets/IMG_9305.JPG.jpeg',
+    'assets/IMG_9306.JPG.jpeg',
+    'assets/IMG_9307.JPG.jpeg',
+    'assets/IMG_9308.JPG.jpeg',
+    'assets/IMG_9309.JPG.jpeg',
+    'assets/IMG_9310.JPG.jpeg',
+    'assets/IMG_9311.JPG.jpeg',
+    'assets/IMG_9312.JPG.jpeg',
+    'assets/IMG_9313.JPG.jpeg',
+    'assets/IMG_9314.JPG (1).jpeg',
+    'assets/IMG_9316.JPG.jpeg',
+    'assets/IMG_9318.JPG.jpeg',
+    'assets/IMG_9319.JPG.jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.45 (1).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.45 (2).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.45 (3).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.45 (4).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.45 (5).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.45.jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.46 (1).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.46 (2).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.46 (3).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.46 (4).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.46 (5).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.46 (6).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.46 (7).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.46.jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.47 (1).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.47 (2).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.47 (3).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.47 (4).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.47 (5).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.47 (6).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.47.jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.48 (1).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.48 (2).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.48 (3).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.48 (4).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.48 (5).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.48.jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.49 (1).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.49 (2).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.49 (3).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.49 (4).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.49 (5).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.49 (6).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.49.jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.50 (1).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.50 (2).jpeg',
+    'assets/WhatsApp Image 2026-06-30 at 17.27.50.jpeg',
+    'assets/galeria-1.jpg',
+    'assets/galeria-2.jpg',
+    'assets/galeria-3.jpg',
+    'assets/galeria-4.jpg'
+  ];
+
+  // Shuffle array para embaralhar as fotos
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  const dynamicImages = document.querySelectorAll('.dynamic-gallery-img');
+  
+  if (dynamicImages.length > 0 && allPhotos.length > 0) {
+    // Sorteia fotos aleatórias para exibir no grid principal
+    const shuffledPhotos = shuffleArray(allPhotos);
+    dynamicImages.forEach((imgEl, index) => {
+      // Se houver fotos suficientes, atribui as sorteadas; senão, repete
+      const photoSrc = shuffledPhotos[index % shuffledPhotos.length];
+      imgEl.src = photoSrc;
+    });
+  }
+
+  // Modal Logic
+  const btnMorePhotos = document.getElementById('btn-more-photos');
+  const photosModal = document.getElementById('photos-modal');
+  const modalClose = document.getElementById('modal-close');
+  const modalOverlay = document.getElementById('modal-overlay');
+  const modalGrid = document.getElementById('modal-gallery-grid');
+
+  if (btnMorePhotos && photosModal) {
+    // Injeta todas as fotos no grid do modal
+    allPhotos.forEach(photoSrc => {
+      const img = document.createElement('img');
+      img.src = photoSrc;
+      img.alt = 'Foto da Galeria Completa';
+      img.loading = 'lazy';
+      modalGrid.appendChild(img);
+    });
+
+    const openModal = () => {
+      photosModal.classList.add('is-open');
+      document.body.style.overflow = 'hidden'; // Evita scroll do site atrás do modal
+    };
+
+    const closeModal = () => {
+      photosModal.classList.remove('is-open');
+      document.body.style.overflow = '';
+    };
+
+    btnMorePhotos.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+    
+    // Fechar ao apertar ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && photosModal.classList.contains('is-open')) {
+        closeModal();
+      }
+    });
+  }
+
 });
