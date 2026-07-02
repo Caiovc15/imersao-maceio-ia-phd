@@ -85,12 +85,21 @@
           </p>
 
           <div class="hero-actions scroll-reveal" style="transition-delay: 0.3s;">
-            <a href="[INSERIR LINK DE INSCRIÇÃO]" class="btn btn-primary">Garantir minha vaga</a>
+            <a href="[LINK-INSCRICAO]" class="btn btn-primary">Garantir minha vaga</a>
             <a href="#cronograma" class="btn btn-text">Ver programação <svg width="16" height="16" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg></a>
+
+            <div class="scroll-indicator">
+              <span>Role para descobrir</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </div>
           </div>
         </div>
 
@@ -99,7 +108,7 @@
           <div class="video-wrapper">
             <video id="hero-video" width="100%" autoplay muted loop playsinline
               style="border-radius: 12px; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16/9;">
-              <source src="assets/IMG_9418.mp4" type="video/mp4">
+              <source src="assets/IMG_9460.mp4" type="video/mp4">
               Seu navegador não suporta a tag de vídeo.
             </video>
             <div class="custom-video-controls">
@@ -121,6 +130,22 @@
       </div>
     </section>
 
+
+    <!-- Experience Highlights Section -->
+    <section class="stats-section">
+      <div class="stats-container scroll-reveal"
+        style="display: flex; justify-content: center; gap: 2rem; align-items: center;">
+        <span style="font-size: 1.125rem; color: var(--text-primary); font-weight: 500;">25 de julho em Maceió</span>
+        <span class="indicator-separator"
+          style="width: 6px; height: 6px; background-color: var(--accent-color); border-radius: 50%;"></span>
+        <span style="font-size: 1.125rem; color: var(--text-primary); font-weight: 500;">Construção prática do início ao
+          fim</span>
+        <span class="indicator-separator"
+          style="width: 6px; height: 6px; background-color: var(--accent-color); border-radius: 50%;"></span>
+        <span style="font-size: 1.125rem; color: var(--text-primary); font-weight: 500;">Você sai com um agente
+          operando</span>
+      </div>
+    </section>
     <!-- Logo Ticker Section -->
     <section class="logo-ticker-section">
       <div class="ticker-container scroll-reveal">
@@ -128,21 +153,43 @@
         <div class="ticker-track">
           <!-- Group 1 -->
           <div class="ticker-group">
-            <div class="ticker-logo" tabindex="0" data-segment="DISTRIBUIÇÃO" data-desc="Distribuidora atacadista de alimentos que abastece o varejo de Alagoas e Sergipe desde 1996.">Asa Branca</div>
-            <div class="ticker-logo" tabindex="0" data-segment="TELECOM & TI" data-desc="Consultoria de telecomunicações e tecnologia com internet corporativa e gestão de TI para empresas.">Alpha1</div>
-            <div class="ticker-logo" tabindex="0" data-segment="TECNOLOGIA" data-desc="Provedora de soluções de tecnologia da informação, segurança e infraestrutura para ambientes corporativos.">Grupo Absolute</div>
-            <div class="ticker-logo" tabindex="0" data-segment="TURISMO" data-desc="Agência de viagens e turismo com roteiros nacionais e internacionais.">Bessa's Turismo</div>
-            <div class="ticker-logo" tabindex="0" data-segment="CONTABILIDADE" data-desc="Escritório de contabilidade especializado em inteligência tributária e gestão financeira empresarial.">DC Rodrigues</div>
-            <div class="ticker-logo" tabindex="0" data-segment="SAÚDE" data-desc="Clínica oftalmológica de Arapiraca com diagnóstico avançado e cirurgias como catarata.">Oftalmo Presente</div>
+            <div class="ticker-logo" tabindex="0" data-segment="DISTRIBUIÇÃO"
+              data-desc="Distribuidora atacadista de alimentos que abastece o varejo de Alagoas e Sergipe desde 1996.">
+              Asa Branca</div>
+            <div class="ticker-logo" tabindex="0" data-segment="TELECOM & TI"
+              data-desc="Consultoria de telecomunicações e tecnologia com internet corporativa e gestão de TI para empresas.">
+              Alpha1</div>
+            <div class="ticker-logo" tabindex="0" data-segment="TECNOLOGIA"
+              data-desc="Provedora de soluções de tecnologia da informação, segurança e infraestrutura para ambientes corporativos.">
+              Grupo Absolute</div>
+            <div class="ticker-logo" tabindex="0" data-segment="TURISMO"
+              data-desc="Agência de viagens e turismo com roteiros nacionais e internacionais.">Bessa's Turismo</div>
+            <div class="ticker-logo" tabindex="0" data-segment="CONTABILIDADE"
+              data-desc="Escritório de contabilidade especializado em inteligência tributária e gestão financeira empresarial.">
+              DC Rodrigues</div>
+            <div class="ticker-logo" tabindex="0" data-segment="SAÚDE"
+              data-desc="Clínica oftalmológica com diagnóstico avançado e cirurgias como catarata.">Oftalmo Presente
+            </div>
           </div>
           <!-- Group 2 (Duplicate for infinite loop) -->
           <div class="ticker-group" aria-hidden="true">
-            <div class="ticker-logo" tabindex="-1" data-segment="DISTRIBUIÇÃO" data-desc="Distribuidora atacadista de alimentos que abastece o varejo de Alagoas e Sergipe desde 1996.">Asa Branca</div>
-            <div class="ticker-logo" tabindex="-1" data-segment="TELECOM & TI" data-desc="Consultoria de telecomunicações e tecnologia com internet corporativa e gestão de TI para empresas.">Alpha1</div>
-            <div class="ticker-logo" tabindex="-1" data-segment="TECNOLOGIA" data-desc="Provedora de soluções de tecnologia da informação, segurança e infraestrutura para ambientes corporativos.">Grupo Absolute</div>
-            <div class="ticker-logo" tabindex="-1" data-segment="TURISMO" data-desc="Agência de viagens e turismo com roteiros nacionais e internacionais.">Bessa's Turismo</div>
-            <div class="ticker-logo" tabindex="-1" data-segment="CONTABILIDADE" data-desc="Escritório de contabilidade especializado em inteligência tributária e gestão financeira empresarial.">DC Rodrigues</div>
-            <div class="ticker-logo" tabindex="-1" data-segment="SAÚDE" data-desc="Clínica oftalmológica de Arapiraca com diagnóstico avançado e cirurgias como catarata.">Oftalmo Presente</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="DISTRIBUIÇÃO"
+              data-desc="Distribuidora atacadista de alimentos que abastece o varejo de Alagoas e Sergipe desde 1996.">
+              Asa Branca</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="TELECOM & TI"
+              data-desc="Consultoria de telecomunicações e tecnologia com internet corporativa e gestão de TI para empresas.">
+              Alpha1</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="TECNOLOGIA"
+              data-desc="Provedora de soluções de tecnologia da informação, segurança e infraestrutura para ambientes corporativos.">
+              Grupo Absolute</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="TURISMO"
+              data-desc="Agência de viagens e turismo com roteiros nacionais e internacionais.">Bessa's Turismo</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="CONTABILIDADE"
+              data-desc="Escritório de contabilidade especializado em inteligência tributária e gestão financeira empresarial.">
+              DC Rodrigues</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="SAÚDE"
+              data-desc="Clínica oftalmológica com diagnóstico avançado e cirurgias como catarata.">Oftalmo Presente
+            </div>
           </div>
         </div>
       </div>
@@ -150,7 +197,7 @@
 
 
     <!-- Deliverables Section -->
-    <section class="deliverables-section">
+    <section class="deliverables-section" id="sobre">
       <div class="deliverables-container">
         <div class="deliverables-header scroll-reveal">
           <span class="deliverables-label">o que você leva</span>
@@ -159,7 +206,8 @@
         <div class="deliverables-grid">
           <!-- Card 1 -->
           <div class="deliverable-card scroll-reveal">
-            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="3"></circle>
               <line x1="12" y1="5" x2="12" y2="9"></line>
               <line x1="12" y1="15" x2="12" y2="19"></line>
@@ -174,7 +222,8 @@
           </div>
           <!-- Card 2 -->
           <div class="deliverable-card scroll-reveal" style="transition-delay: 0.1s;">
-            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
               <line x1="3" y1="10" x2="21" y2="10"></line>
               <line x1="8" y1="14" x2="16" y2="14"></line>
@@ -184,7 +233,8 @@
           </div>
           <!-- Card 3 -->
           <div class="deliverable-card scroll-reveal" style="transition-delay: 0.2s;">
-            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
               <path d="M9 9h6"></path>
               <path d="M9 13h6"></path>
@@ -195,7 +245,8 @@
           </div>
           <!-- Card 4 -->
           <div class="deliverable-card scroll-reveal" style="transition-delay: 0.3s;">
-            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
               <path d="M12 6v6l4-2"></path>
             </svg>
@@ -211,32 +262,45 @@
         <div class="methodology-header scroll-reveal">
           <span class="section-label">A METODOLOGIA</span>
           <h2 class="section-title">O caminho da sua empresa agêntica</h2>
-          <p class="section-desc">Quatro fases para sair do zero e chegar a uma operação que funciona sozinha — a imersão é onde tudo começa.</p>
+          <p class="section-desc">Quatro fases para sair do zero e chegar a uma operação que funciona sozinha — a
+            imersão é onde tudo começa.</p>
         </div>
         <div class="methodology-grid">
+          <!-- SVG Connecting line -->
+          <div class="methodology-line-wrapper">
+            <svg class="methodology-svg-line" preserveAspectRatio="none" viewBox="0 0 1000 100">
+              <path d="M 0 50 L 1000 50" stroke="#1A3A5C" stroke-width="1.5" fill="none" stroke-opacity="0.3"
+                class="meth-path" />
+            </svg>
+          </div>
+
           <!-- Phase 1 -->
           <div class="methodology-card scroll-reveal">
             <div class="methodology-number">01</div>
             <h3 class="methodology-title">Educação</h3>
-            <p class="methodology-desc">Você aprende o método e monta seu ambiente: instala as ferramentas, acessa sua empresa virtual pelo painel de controle e conversa com seu primeiro agente pelo Telegram.</p>
+            <p class="methodology-desc">Você aprende o método e monta seu ambiente: instala as ferramentas, acessa sua
+              empresa virtual pelo painel de controle e conversa com seu primeiro agente pelo Telegram.</p>
           </div>
           <!-- Phase 2 -->
           <div class="methodology-card scroll-reveal" style="transition-delay: 0.1s;">
             <div class="methodology-number">02</div>
             <h3 class="methodology-title">Experimentação</h3>
-            <p class="methodology-desc">Seu agente ganha identidade e função: você o promove a gestor, contrata agentes especialistas e treina o time para trabalhar coordenado.</p>
+            <p class="methodology-desc">Seu agente ganha identidade e função: você o promove a gestor, contrata agentes
+              especialistas e treina o time para trabalhar coordenado.</p>
           </div>
           <!-- Phase 3 -->
           <div class="methodology-card scroll-reveal" style="transition-delay: 0.2s;">
             <div class="methodology-number">03</div>
             <h3 class="methodology-title">Expertise</h3>
-            <p class="methodology-desc">Sua operação vai para um servidor dedicado e passa a funcionar 24 horas por dia, 7 dias por semana — sem depender do seu computador.</p>
+            <p class="methodology-desc">Sua operação vai para um servidor dedicado e passa a funcionar 24 horas por dia,
+              7 dias por semana — sem depender do seu computador.</p>
           </div>
           <!-- Phase 4 -->
           <div class="methodology-card scroll-reveal" style="transition-delay: 0.3s;">
             <div class="methodology-number">04</div>
             <h3 class="methodology-title">Escala</h3>
-            <p class="methodology-desc">Com a base funcionando, você multiplica: novos agentes, novos departamentos e uma organização que cresce sem crescer a folha.</p>
+            <p class="methodology-desc">Com a base funcionando, você multiplica: novos agentes, novos departamentos e
+              uma organização que cresce sem crescer a folha.</p>
           </div>
         </div>
       </div>
@@ -247,9 +311,10 @@
         <div class="evolution-header scroll-reveal">
           <span class="section-label">A EVOLUÇÃO</span>
           <h2 class="section-title">De um profissional a uma organização inteira</h2>
-          <p class="section-desc">A transformação agêntica não começa pela empresa toda. Começa por uma pessoa — e se multiplica.</p>
+          <p class="section-desc">A transformação agêntica não começa pela empresa toda. Começa por uma pessoa — e se
+            multiplica.</p>
         </div>
-        
+
         <div class="evolution-grid">
           <!-- Level 1 -->
           <div class="evolution-card scroll-reveal">
@@ -258,20 +323,26 @@
             </svg>
             <div class="evolution-number">01</div>
             <h3 class="evolution-title">Profissional agêntico</h3>
-            <p class="evolution-desc">Uma pessoa capacitada para modelar, construir e gerenciar agentes de IA. É quem sai da imersão: alguém que domina o método e opera seu primeiro funcionário agêntico.</p>
+            <p class="evolution-desc">Uma pessoa capacitada para modelar, construir e gerenciar agentes de IA. É quem
+              sai da imersão: alguém que domina o método e opera seu primeiro funcionário agêntico.</p>
           </div>
           <!-- Level 2 -->
           <div class="evolution-card scroll-reveal" style="transition-delay: 0.15s;">
             <svg viewBox="0 0 100 100" class="evo-svg">
-              <path d="M50,80 L50,50 L20,20 M50,50 L50,20 M50,50 L80,20" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-1" />
+              <path d="M50,80 L50,50 L20,20 M50,50 L50,20 M50,50 L80,20" stroke="#1A3A5C" stroke-width="1.5" fill="none"
+                class="branch-1" />
               <circle cx="50" cy="80" r="10" fill="#1A3A5C" class="base-node" />
-              <circle cx="20" cy="20" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
-              <circle cx="50" cy="20" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
-              <circle cx="80" cy="20" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
+              <circle cx="20" cy="20" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="sec-node" />
+              <circle cx="50" cy="20" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="sec-node" />
+              <circle cx="80" cy="20" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="sec-node" />
             </svg>
             <div class="evolution-number">02</div>
             <h3 class="evolution-title">Departamento agêntico</h3>
-            <p class="evolution-desc">O profissional aplica o método no seu setor: agentes assumem as tarefas repetitivas do departamento, coordenados por um agente gestor — e a equipe foca no que exige gente.</p>
+            <p class="evolution-desc">O profissional aplica o método no seu setor: agentes assumem as tarefas
+              repetitivas do departamento, coordenados por um agente gestor — e a equipe foca no que exige gente.</p>
           </div>
           <!-- Level 3 -->
           <div class="evolution-card scroll-reveal" style="transition-delay: 0.3s;">
@@ -279,36 +350,51 @@
               <!-- Central node -->
               <path d="M50,80 L50,55" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-1" />
               <!-- Branches -->
-              <path d="M50,55 L20,40 M50,55 L50,30 M50,55 L80,40" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-1" />
+              <path d="M50,55 L20,40 M50,55 L50,30 M50,55 L80,40" stroke="#1A3A5C" stroke-width="1.5" fill="none"
+                class="branch-1" />
               <!-- Sub-branches left -->
               <path d="M20,40 L10,20 M20,40 L30,20" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-2" />
               <!-- Sub-branches center -->
               <path d="M50,30 L40,10 M50,30 L60,10" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-2" />
               <!-- Sub-branches right -->
               <path d="M80,40 L70,20 M80,40 L90,20" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-2" />
-              
+
               <circle cx="50" cy="80" r="10" fill="#1A3A5C" class="base-node" />
-              
-              <circle cx="20" cy="40" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
-              <circle cx="50" cy="30" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
-              <circle cx="80" cy="40" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
-              
-              <circle cx="10" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
-              <circle cx="30" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
-              <circle cx="40" cy="10" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
-              <circle cx="60" cy="10" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
-              <circle cx="70" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
-              <circle cx="90" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
+
+              <circle cx="20" cy="40" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="sec-node" />
+              <circle cx="50" cy="30" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="sec-node" />
+              <circle cx="80" cy="40" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="sec-node" />
+
+              <circle cx="10" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="tert-node" />
+              <circle cx="30" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="tert-node" />
+              <circle cx="40" cy="10" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="tert-node" />
+              <circle cx="60" cy="10" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="tert-node" />
+              <circle cx="70" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="tert-node" />
+              <circle cx="90" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)"
+                class="tert-node" />
             </svg>
             <div class="evolution-number">03</div>
             <h3 class="evolution-title">Organização agêntica</h3>
-            <p class="evolution-desc">O modelo se expande para toda a empresa: departamentos operando com times de agentes integrados, processos fluindo 24 horas por dia e pessoas dedicadas a decidir, criar e crescer.</p>
+            <p class="evolution-desc">O modelo se expande para toda a empresa: departamentos operando com times de
+              agentes integrados, processos fluindo 24 horas por dia e pessoas dedicadas a decidir, criar e crescer.</p>
           </div>
         </div>
 
         <div class="evolution-footer scroll-reveal" style="transition-delay: 0.4s;">
           <p class="evolution-footer-text">A imersão é o primeiro passo: é onde nasce o profissional agêntico.</p>
-          <a href="#inscricao" class="evolution-cta">Garantir minha vaga <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          <a href="#inscricao" class="evolution-cta">Garantir minha vaga <svg width="16" height="16" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg></a>
         </div>
       </div>
     </section>
@@ -322,6 +408,12 @@
           <h2 class="section-title">Programação do dia</h2>
         </div>
         <div class="schedule-grid">
+          <!-- Desktop Schedule Timeline SVG -->
+          <svg class="schedule-timeline-svg" preserveAspectRatio="none" viewBox="0 0 100 1000">
+            <path d="M 50 0 L 50 1000" stroke="#1A3A5C" stroke-width="1.5" fill="none" stroke-opacity="0.2"
+              class="sched-path" />
+          </svg>
+
           <!-- Schedule Item 1 -->
           <div class="schedule-item scroll-reveal">
             <div class="schedule-time">08h00 - 09h00</div>
@@ -363,7 +455,7 @@
     <section class="speaker-section" id="palestrantes">
       <div class="speaker-container">
         <div class="speaker-visual scroll-reveal">
-          <div class="speaker-photo-placeholder"></div>
+          <img class="speaker-photo" src="assets/bruno-bessa-2.png" alt="Bruno Bessa" />
         </div>
         <div class="speaker-content scroll-reveal" style="transition-delay: 0.2s;">
           <span class="section-label">quem lidera</span>
@@ -388,26 +480,31 @@
       <div class="gallery-container">
         <div class="gallery-header scroll-reveal">
           <span class="section-label">galeria</span>
-          <h2 class="section-title">O que acontece na imersão</h2>
-          <p class="section-desc">fotos reais da edição de Arapiraca </p>
+          <h2 class="section-title">O que espera por você em Maceió</h2>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: -1rem;">registros da 1ª edição</p>
+
         </div>
 
         <div class="gallery-grid">
           <!-- Item 1: Large portrait -->
           <div class="gallery-item item-large scroll-reveal">
-            <img src="assets/galeria-1.jpg" alt="Imersão IA PhD Galeria 1" class="gallery-img dynamic-gallery-img">
+            <img src="assets/galeria-1.jpg" alt="Imersão IA PhD Galeria 1" class="gallery-img dynamic-gallery-img"
+              loading="lazy">
           </div>
           <!-- Item 2: Landscape top right -->
           <div class="gallery-item item-landscape scroll-reveal" style="transition-delay: 0.1s;">
-            <img src="assets/galeria-2.jpg" alt="Imersão IA PhD Galeria 2" class="gallery-img dynamic-gallery-img">
+            <img src="assets/galeria-2.jpg" alt="Imersão IA PhD Galeria 2" class="gallery-img dynamic-gallery-img"
+              loading="lazy">
           </div>
           <!-- Item 3: Square bottom right -->
           <div class="gallery-item item-square scroll-reveal" style="transition-delay: 0.2s;">
-            <img src="assets/galeria-3.jpg" alt="Imersão IA PhD Galeria 3" class="gallery-img dynamic-gallery-img">
+            <img src="assets/galeria-3.jpg" alt="Imersão IA PhD Galeria 3" class="gallery-img dynamic-gallery-img"
+              loading="lazy">
           </div>
           <!-- Item 4: Wide bottom -->
           <div class="gallery-item item-wide scroll-reveal">
-            <img src="assets/galeria-4.jpg" alt="Imersão IA PhD Galeria 4" class="gallery-img dynamic-gallery-img">
+            <img src="assets/galeria-4.jpg" alt="Imersão IA PhD Galeria 4" class="gallery-img dynamic-gallery-img"
+              loading="lazy">
           </div>
         </div>
 
@@ -418,16 +515,13 @@
     <section class="aftermovie-section">
       <div class="aftermovie-container scroll-reveal">
         <div class="aftermovie-wrapper">
-          <div class="aftermovie-placeholder">
-            <svg class="play-icon large-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polygon points="10 8 16 12 10 16 10 8"></polygon>
-            </svg>
-          </div>
+          <video id="aftermovie-video" width="100%" controls playsinline preload="metadata" style="border-radius: 14px; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16/9; outline: none; border: 1px solid var(--border-color); background-color: #000;">
+            <source src="assets/IMG_9417.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+          </video>
         </div>
         <div class="aftermovie-caption" style="text-align: center; margin-top: 2rem;">
-          <p style="margin-bottom: 1rem; color: var(--text-secondary);">Assista ao aftermovie da 1ª edição, em Arapiraca
+          <p style="margin-bottom: 1rem; color: var(--text-secondary);">Veja como é por dentro
           </p>
           <button id="btn-more-photos" class="btn btn-outline-nav">Ver mais fotos da imersão</button>
         </div>
@@ -439,76 +533,212 @@
       <div class="test-container">
         <div class="test-header scroll-reveal">
           <span class="section-label">quem já viveu</span>
-          <h2 class="section-title">O que dizem os participantes da 1ª edição</h2>
+          <h2 class="section-title">Quem já construiu, recomenda</h2>
         </div>
-        <div class="test-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-          <!-- Video Testimonial 1 -->
-          <div class="test-card-video scroll-reveal">
-            <div class="video-wrapper" style="aspect-ratio: 9/16; border-radius: 12px;">
-              <video class="testimonial-video" width="100%" muted playsinline
-                style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="assets/IMG_9349.mp4" type="video/mp4">
-              </video>
-              <div class="custom-video-controls">
-                <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
-                <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                    <path
-                      d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
-                  </svg>
-                </button>
+        <div class="carousel-container scroll-reveal" id="test-carousel" tabindex="0">
+          <div class="carousel-track">
+
+            <!-- Video 1 -->
+            <div class="carousel-slide active">
+              <div class="test-card-video">
+                <div class="video-wrapper">
+                  <video class="testimonial-video" width="100%" muted playsinline preload="metadata">
+                    <source src="assets/IMG_9349.mp4" type="video/mp4">
+                  </video>
+                  <div class="custom-video-controls">
+                    <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </button>
+                    <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path
+                          d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="test-credit">
+                  <span class="test-name">Dr. Adonis Born</span>
+                  <span class="test-role">Ceo da Oftalmo Presente</span>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Video Testimonial 2 -->
-          <div class="test-card-video scroll-reveal" style="transition-delay: 0.1s;">
-            <div class="video-wrapper" style="aspect-ratio: 9/16; border-radius: 12px;">
-              <video class="testimonial-video" width="100%" muted playsinline
-                style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="assets/IMG_9351.mp4" type="video/mp4">
-              </video>
-              <div class="custom-video-controls">
-                <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
-                <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                    <path
-                      d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
-                  </svg>
-                </button>
+
+            <!-- Video 2 -->
+            <div class="carousel-slide">
+              <div class="test-card-video">
+                <div class="video-wrapper">
+                  <video class="testimonial-video" width="100%" muted playsinline preload="metadata">
+                    <source src="assets/IMG_9351.mp4" type="video/mp4">
+                  </video>
+                  <div class="custom-video-controls">
+                    <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </button>
+                    <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path
+                          d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="test-credit">
+                  <span class="test-name">Jairo Ribeiro</span>
+                  <span class="test-role">Ceo da Alpha1</span>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Video Testimonial 3 -->
-          <div class="test-card-video scroll-reveal" style="transition-delay: 0.2s;">
-            <div class="video-wrapper" style="aspect-ratio: 9/16; border-radius: 12px;">
-              <video class="testimonial-video" width="100%" muted playsinline
-                style="width: 100%; height: 100%; object-fit: cover;">
-                <source src="assets/IMG_9357.mp4" type="video/mp4">
-              </video>
-              <div class="custom-video-controls">
-                <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
-                <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                    <path
-                      d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
-                  </svg>
-                </button>
+
+            <!-- Video 3 -->
+            <div class="carousel-slide">
+              <div class="test-card-video">
+                <div class="video-wrapper">
+                  <video class="testimonial-video" width="100%" muted playsinline preload="metadata">
+                    <source src="assets/IMG_9357.mp4" type="video/mp4">
+                  </video>
+                  <div class="custom-video-controls">
+                    <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </button>
+                    <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path
+                          d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="test-credit">
+                  <span class="test-name">Rodrigo Cavalcante</span>
+                  <span class="test-role">Participante</span>
+                </div>
               </div>
             </div>
+
+            <!-- Video 4 -->
+            <div class="carousel-slide">
+              <div class="test-card-video">
+                <div class="video-wrapper">
+                  <video class="testimonial-video" width="100%" muted playsinline preload="metadata">
+                    <source src="assets/IMG_9358.mp4" type="video/mp4">
+                  </video>
+                  <div class="custom-video-controls">
+                    <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </button>
+                    <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path
+                          d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="test-credit">
+                  <span class="test-name">Alisson Guimarães</span>
+                  <span class="test-role">Ceo do HUB FDS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="carousel-slide">
+              <div class="test-card-video">
+                <div class="video-wrapper">
+                  <video class="testimonial-video" width="100%" muted playsinline preload="metadata">
+                    <source src="assets/IMG_9361.mp4" type="video/mp4">
+                  </video>
+                  <div class="custom-video-controls">
+                    <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </button>
+                    <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path
+                          d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="test-credit">
+                  <span class="test-name">Evânia</span>
+                  <span class="test-role">Da Emília Turismo</span>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Video 6 -->
+            <div class="carousel-slide">
+              <div class="test-card-video">
+                <div class="video-wrapper">
+                  <video class="testimonial-video" width="100%" muted playsinline preload="metadata">
+                    <source src="assets/IMG_9345.mp4" type="video/mp4">
+                  </video>
+                  <div class="custom-video-controls">
+                    <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </button>
+                    <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path
+                          d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="test-credit">
+                  <span class="test-name">Dheiver Santos</span>
+                  <span class="test-role">Ceo do mangaba AI</span>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- /carousel-track -->
+
+          <!-- Navigation Arrows -->
+          <button class="carousel-arrow carousel-prev" aria-label="Depoimento anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-arrow carousel-next" aria-label="Próximo depoimento">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button class="dot active" data-index="0" aria-label="Ir para depoimento 1"></button>
+            <button class="dot" data-index="1" aria-label="Ir para depoimento 2"></button>
+            <button class="dot" data-index="2" aria-label="Ir para depoimento 3"></button>
+            <button class="dot" data-index="3" aria-label="Ir para depoimento 4"></button>
+            <button class="dot" data-index="4" aria-label="Ir para depoimento 5"></button>
+            <button class="dot" data-index="5" aria-label="Ir para depoimento 6"></button>
           </div>
+
         </div>
+        <!-- Global Caption -->
+        <p style="font-size: 0.85rem; color: var(--text-secondary); text-align: center; margin-top: 2rem;">depoimentos
+          da 1ª edição</p>
       </div>
     </section>
 
@@ -539,6 +769,69 @@
       </div>
     </section>
 
+
+    <!-- Requirements Section -->
+    <section class="requirements-section" id="requisitos">
+      <div class="req-container">
+        <div class="req-header scroll-reveal">
+          <span class="section-label">antes de vir</span>
+          <h2 class="section-title">O que levar para a imersão</h2>
+          <p class="section-desc">Poucos requisitos — o resto a gente constrói junto no dia.</p>
+        </div>
+        <div class="req-grid">
+          <!-- Item 1: Notebook -->
+          <div class="req-card scroll-reveal">
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="req-content">
+              <div class="req-title-row">
+                <h3 class="req-title">Computador ou notebook</h3>
+                <span class="req-badge">RECOMENDADO</span>
+              </div>
+              <ul class="req-text"
+                style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li><strong style="color: var(--text-primary); font-weight: 400;">Mínimo:</strong> 16 GB de RAM</li>
+                <li><strong style="color: var(--text-primary); font-weight: 400;">Recomendado:</strong> 32 GB de RAM
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Item 2: ChatGPT Plus -->
+          <div class="req-card scroll-reveal" style="transition-delay: 0.1s;">
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                <path d="M12 7v6"></path>
+                <path d="M9 10h6"></path>
+              </svg>
+            </div>
+            <div class="req-content">
+              <div class="req-title-row">
+                <h3 class="req-title">Acesso a uma IA</h3>
+                <span class="req-badge">RECOMENDADO</span>
+              </div>
+              <ul class="req-text"
+                style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>Conta no <strong style="color: var(--text-primary); font-weight: 400;">ChatGPT Plus (US$
+                    20/mês)</strong> ou outra IA compatível</li>
+                <li
+                  style="font-size: 0.85em; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin: 0.2rem 0;">
+                  ou apenas</li>
+                <li><strong style="color: var(--text-primary); font-weight: 400;">US$ 10 em créditos</strong> para
+                  testes iniciais com modelos de IA via API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- FAQ Section -->
     <section class="faq-section">
       <div class="faq-container">
@@ -618,12 +911,20 @@
     <section class="cta-section" id="inscricao">
       <div class="cta-container scroll-reveal">
         <h2 class="cta-title">Sua empresa pode sair dessa imersão operando com IA</h2>
-        <p class="cta-desc">24 de julho, em Maceió. Um dia. Um agente real funcionando. Vagas limitadas.</p>
+        <p class="cta-desc">25 de julho, em Maceió. Um dia. Um agente real funcionando. Vagas limitadas.</p>
         <div class="cta-actions">
-          <a href="[INSERIR LINK DE INSCRIÇÃO]" class="btn btn-primary">Garantir minha vaga — R$ 477,90</a>
+          <a href="[LINK-INSCRICAO]" class="btn btn-primary">Garantir minha vaga — R$ 477,90</a>
         </div>
       </div>
     </section>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta-bar" id="sticky-cta">
+      <div class="sticky-cta-content">
+        <span class="sticky-text">25 de julho · Maceió</span>
+        <a href="#inscricao" class="btn btn-primary btn-sm">Garantir vaga</a>
+      </div>
+    </div>
   </main>
 
   <!-- Photos Modal -->

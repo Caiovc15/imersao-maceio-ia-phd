@@ -331,4 +331,209 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
+
+  // --- Sticky CTA & scroll indicator with rAF ---
+  const stickyCta = document.getElementById('sticky-cta');
+  const heroSection = document.querySelector('.hero-section');
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
+  const updateScroll = () => {
+    if (stickyCta && heroSection) {
+      const heroBottom = heroSection.getBoundingClientRect().bottom + window.scrollY;
+      if (window.scrollY > heroBottom) {
+        stickyCta.classList.add('visible');
+      } else {
+        stickyCta.classList.remove('visible');
+      }
+    }
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    lastScrollY = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(updateScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+  // Initial check
+  updateScroll();
+
+
+  // --- Stats Count-Up ---
+  const runCountUp = (el) => {
+    // get target from data-target attribute, or check if innerText has a span with data-target
+    let targetSpan = el.querySelector('span[data-target]');
+    let targetEl = targetSpan ? targetSpan : el;
+    const target = parseInt(targetEl.getAttribute('data-target') || '0', 10);
+    const duration = 1200; // 1.2s as requested
+    const stepTime = Math.abs(Math.floor(duration / target)) || 10;
+    
+    let current = 0;
+    const timer = setInterval(() => {
+      current += 1;
+      targetEl.textContent = current;
+      if (current >= target) {
+        targetEl.textContent = target;
+        clearInterval(timer);
+      }
+    }, stepTime);
+  };
+
+  const statsObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const numbers = entry.target.querySelectorAll('.stat-number');
+        numbers.forEach(num => runCountUp(num));
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  const statsContainer = document.querySelector('.stats-container');
+  if(statsContainer) {
+    statsObserver.observe(statsContainer);
+  }
+
+  // --- Schedule SVG Reveal ---
+  const scheduleObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  const scheduleGrid = document.querySelector('.schedule-grid');
+  if(scheduleGrid) {
+    scheduleObserver.observe(scheduleGrid);
+  }
+
+
+
+  // --- Testimonials Carousel Logic ---
+  const carouselContainer = document.getElementById('test-carousel');
+  if (carouselContainer) {
+    const slides = carouselContainer.querySelectorAll('.carousel-slide');
+    const prevBtn = carouselContainer.querySelector('.carousel-prev');
+    const nextBtn = carouselContainer.querySelector('.carousel-next');
+    const dots = carouselContainer.querySelectorAll('.carousel-indicators .dot');
+    
+    let currentIndex = 0;
+    let isAnimating = false;
+    
+    const pauseAllVideos = () => {
+      const allVideos = carouselContainer.querySelectorAll('video');
+      const allPlayBtns = carouselContainer.querySelectorAll('.play-pause-btn');
+      allVideos.forEach((vid, i) => {
+        vid.pause();
+        const btn = allPlayBtns[i];
+        if (btn) {
+          btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M8 5v14l11-7z"/></svg>';
+        }
+      });
+    };
+
+    const updateCarousel = (newIndex, direction) => {
+      if (isAnimating || newIndex === currentIndex) return;
+      isAnimating = true;
+      
+      pauseAllVideos();
+
+      // Remove classes from current
+      const currentSlide = slides[currentIndex];
+      const newSlide = slides[newIndex];
+      
+      // Setup transition classes
+      currentSlide.classList.remove('active');
+      if (direction === 'left') {
+        currentSlide.classList.add('sliding-left');
+      } else {
+        currentSlide.classList.remove('sliding-left');
+      }
+      
+      newSlide.classList.remove('sliding-left');
+      
+      // Update dots
+      dots[currentIndex].classList.remove('active');
+      dots[newIndex].classList.add('active');
+      
+      // Trigger reflow
+      void newSlide.offsetWidth;
+      
+      newSlide.classList.add('active');
+      
+      currentIndex = newIndex;
+      
+      setTimeout(() => {
+        currentSlide.classList.remove('sliding-left');
+        isAnimating = false;
+      }, 400); // Matches CSS transition duration
+    };
+
+    const goNext = () => {
+      const newIndex = (currentIndex + 1) % slides.length;
+      updateCarousel(newIndex, 'right');
+    };
+
+    const goPrev = () => {
+      const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel(newIndex, 'left');
+    };
+
+    // Button Listeners
+    if (nextBtn) nextBtn.addEventListener('click', goNext);
+    if (prevBtn) prevBtn.addEventListener('click', goPrev);
+
+    // Dot Listeners
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        if (index > currentIndex) {
+          updateCarousel(index, 'right');
+        } else if (index < currentIndex) {
+          updateCarousel(index, 'left');
+        }
+      });
+    });
+
+    // Keyboard Navigation
+    carouselContainer.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') {
+        goNext();
+        e.preventDefault();
+      } else if (e.key === 'ArrowLeft') {
+        goPrev();
+        e.preventDefault();
+      }
+    });
+
+    // Swipe (Touch) Support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carouselContainer.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    carouselContainer.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+
+    const handleSwipe = () => {
+      const swipeThreshold = 50; // Minimum distance to trigger swipe
+      if (touchEndX < touchStartX - swipeThreshold) {
+        // Swiped Left -> Go Next
+        goNext();
+      }
+      if (touchEndX > touchStartX + swipeThreshold) {
+        // Swiped Right -> Go Prev
+        goPrev();
+      }
+    };
+  }
+
 });
