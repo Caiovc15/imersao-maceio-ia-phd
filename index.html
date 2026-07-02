@@ -16,7 +16,7 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
-  
+
   <noscript>
     <style>
       .scroll-reveal {
@@ -42,8 +42,9 @@
       </a>
 
       <nav class="nav-menu" aria-label="Navegação principal">
-        <a href="#sobre" class="nav-link">Sobre</a>
-        <a href="#palestrantes" class="nav-link">Palestrantes</a>
+        <a href="#sobre" class="nav-link">A experiência</a>
+        <a href="#cronograma" class="nav-link">Programação</a>
+        <a href="#palestrantes" class="nav-link">Quem lidera</a>
         <a href="#local" class="nav-link">Local</a>
       </nav>
 
@@ -73,31 +74,46 @@
             <span class="indicator-separator"></span>
             <span class="indicator">Vagas Limitadas</span>
           </div>
-          
-          <h1 class="hero-headline scroll-reveal" style="transition-delay: 0.1s;">Domine a Engenharia de Sistemas Agênticos</h1>
+
+          <h1 class="hero-headline scroll-reveal" style="transition-delay: 0.1s;">Crie seu primeiro Funcionário Agêntico
+          </h1>
           <p class="hero-subheadline scroll-reveal" style="transition-delay: 0.2s;">
-            Construa funcionários de IA que operam, decidem e executam tarefas reais do seu negócio com método e segurança em nossa imersão intensiva.
+            Uma imersão presencial e prática para profissionais, líderes e empresários que desejam ampliar sua
+            capacidade de execução, aprender a trabalhar ao lado da Inteligência Artificial e iniciar a transformação
+            para a era das Organizações Agênticas.<br><br>
+            <strong style="color: var(--text-primary);">25 de julho · 08h às 17h · Maceió</strong>
           </p>
-          
+
           <div class="hero-actions scroll-reveal" style="transition-delay: 0.3s;">
-            <a href="#inscricao" class="btn btn-primary">Garantir minha vaga</a>
-            <a href="#cronograma" class="btn btn-text">Ver cronograma <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            <a href="[INSERIR LINK DE INSCRIÇÃO]" class="btn btn-primary">Garantir minha vaga</a>
+            <a href="#cronograma" class="btn btn-text">Ver programação <svg width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg></a>
           </div>
         </div>
 
         <!-- Right Column -->
         <div class="hero-visual scroll-reveal" style="transition-delay: 0.4s;">
           <div class="video-wrapper">
-            <video id="hero-video" width="100%" autoplay muted loop playsinline style="border-radius: 12px; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16/9;">
+            <video id="hero-video" width="100%" autoplay muted loop playsinline
+              style="border-radius: 12px; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16/9;">
               <source src="assets/IMG_9418.mp4" type="video/mp4">
               Seu navegador não suporta a tag de vídeo.
             </video>
             <div class="custom-video-controls">
               <button id="play-pause-btn" class="ctrl-btn" aria-label="Pausar">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                  <rect x="6" y="4" width="4" height="16" />
+                  <rect x="14" y="4" width="4" height="16" />
+                </svg>
               </button>
               <button id="mute-unmute-btn" class="ctrl-btn" aria-label="Ativar som">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                  <path
+                    d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                </svg>
               </button>
             </div>
           </div>
@@ -108,51 +124,260 @@
     <!-- Logo Ticker Section -->
     <section class="logo-ticker-section">
       <div class="ticker-container scroll-reveal">
-        <p class="ticker-label">Empresas e profissionais que já participaram das imersões anteriores</p>
+        <p class="ticker-label">Empresas que já participaram das imersões anteriores.</p>
         <div class="ticker-track">
           <!-- Group 1 -->
           <div class="ticker-group">
-            <div class="ticker-logo">TechCorp</div>
-            <div class="ticker-logo">Innovate</div>
-            <div class="ticker-logo">Global Sys</div>
-            <div class="ticker-logo">Nexus AI</div>
-            <div class="ticker-logo">Vanguard</div>
+            <div class="ticker-logo" tabindex="0" data-segment="DISTRIBUIÇÃO" data-desc="Distribuidora atacadista de alimentos que abastece o varejo de Alagoas e Sergipe desde 1996.">Asa Branca</div>
+            <div class="ticker-logo" tabindex="0" data-segment="TELECOM & TI" data-desc="Consultoria de telecomunicações e tecnologia com internet corporativa e gestão de TI para empresas.">Alpha1</div>
+            <div class="ticker-logo" tabindex="0" data-segment="TECNOLOGIA" data-desc="Provedora de soluções de tecnologia da informação, segurança e infraestrutura para ambientes corporativos.">Grupo Absolute</div>
+            <div class="ticker-logo" tabindex="0" data-segment="TURISMO" data-desc="Agência de viagens e turismo com roteiros nacionais e internacionais.">Bessa's Turismo</div>
+            <div class="ticker-logo" tabindex="0" data-segment="CONTABILIDADE" data-desc="Escritório de contabilidade especializado em inteligência tributária e gestão financeira empresarial.">DC Rodrigues</div>
+            <div class="ticker-logo" tabindex="0" data-segment="SAÚDE" data-desc="Clínica oftalmológica de Arapiraca com diagnóstico avançado e cirurgias como catarata.">Oftalmo Presente</div>
           </div>
           <!-- Group 2 (Duplicate for infinite loop) -->
           <div class="ticker-group" aria-hidden="true">
-            <div class="ticker-logo">TechCorp</div>
-            <div class="ticker-logo">Innovate</div>
-            <div class="ticker-logo">Global Sys</div>
-            <div class="ticker-logo">Nexus AI</div>
-            <div class="ticker-logo">Vanguard</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="DISTRIBUIÇÃO" data-desc="Distribuidora atacadista de alimentos que abastece o varejo de Alagoas e Sergipe desde 1996.">Asa Branca</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="TELECOM & TI" data-desc="Consultoria de telecomunicações e tecnologia com internet corporativa e gestão de TI para empresas.">Alpha1</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="TECNOLOGIA" data-desc="Provedora de soluções de tecnologia da informação, segurança e infraestrutura para ambientes corporativos.">Grupo Absolute</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="TURISMO" data-desc="Agência de viagens e turismo com roteiros nacionais e internacionais.">Bessa's Turismo</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="CONTABILIDADE" data-desc="Escritório de contabilidade especializado em inteligência tributária e gestão financeira empresarial.">DC Rodrigues</div>
+            <div class="ticker-logo" tabindex="-1" data-segment="SAÚDE" data-desc="Clínica oftalmológica de Arapiraca com diagnóstico avançado e cirurgias como catarata.">Oftalmo Presente</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Previous Edition Section -->
-    <section class="previous-edition-section" id="sobre">
-      <div class="pe-container">
-        <div class="pe-content scroll-reveal">
-          <span class="section-label">A Experiência</span>
-          <h2 class="section-title">Muito além da teoria. Construção real.</h2>
-          <p class="section-desc">
-            A Imersão Presencial IA PhD não é um curso. É um ambiente de experimentação intensivo onde sua equipe constrói e implanta o primeiro funcionário agêntico do zero. Sem setups complexos, focado em método e resultado.
-          </p>
+
+    <!-- Deliverables Section -->
+    <section class="deliverables-section">
+      <div class="deliverables-container">
+        <div class="deliverables-header scroll-reveal">
+          <span class="deliverables-label">o que você leva</span>
+          <h2 class="deliverables-title">Você sai da imersão com</h2>
+        </div>
+        <div class="deliverables-grid">
+          <!-- Card 1 -->
+          <div class="deliverable-card scroll-reveal">
+            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"></circle>
+              <line x1="12" y1="5" x2="12" y2="9"></line>
+              <line x1="12" y1="15" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="9" y2="12"></line>
+              <line x1="15" y1="12" x2="19" y2="12"></line>
+              <circle cx="12" cy="3" r="2"></circle>
+              <circle cx="12" cy="21" r="2"></circle>
+              <circle cx="3" cy="12" r="2"></circle>
+              <circle cx="21" cy="12" r="2"></circle>
+            </svg>
+            <p class="deliverable-text">Seu primeiro Funcionário Agêntico funcionando</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="deliverable-card scroll-reveal" style="transition-delay: 0.1s;">
+            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+              <line x1="8" y1="14" x2="16" y2="14"></line>
+              <line x1="8" y1="17" x2="12" y2="17"></line>
+            </svg>
+            <p class="deliverable-text">Um ambiente de trabalho (Cockpit)</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="deliverable-card scroll-reveal" style="transition-delay: 0.2s;">
+            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <path d="M9 9h6"></path>
+              <path d="M9 13h6"></path>
+              <path d="M9 17h4"></path>
+              <circle cx="15" cy="17" r="1"></circle>
+            </svg>
+            <p class="deliverable-text">Uma metodologia para construir novos Funcionários Agênticos</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="deliverable-card scroll-reveal" style="transition-delay: 0.3s;">
+            <svg class="deliverable-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+              <path d="M12 6v6l4-2"></path>
+            </svg>
+            <p class="deliverable-text">Playbooks para continuar evoluindo após a imersão</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology-section" id="metodologia">
+      <div class="methodology-container">
+        <div class="methodology-header scroll-reveal">
+          <span class="section-label">A METODOLOGIA</span>
+          <h2 class="section-title">O caminho da sua empresa agêntica</h2>
+          <p class="section-desc">Quatro fases para sair do zero e chegar a uma operação que funciona sozinha — a imersão é onde tudo começa.</p>
+        </div>
+        <div class="methodology-grid">
+          <!-- Phase 1 -->
+          <div class="methodology-card scroll-reveal">
+            <div class="methodology-number">01</div>
+            <h3 class="methodology-title">Educação</h3>
+            <p class="methodology-desc">Você aprende o método e monta seu ambiente: instala as ferramentas, acessa sua empresa virtual pelo painel de controle e conversa com seu primeiro agente pelo Telegram.</p>
+          </div>
+          <!-- Phase 2 -->
+          <div class="methodology-card scroll-reveal" style="transition-delay: 0.1s;">
+            <div class="methodology-number">02</div>
+            <h3 class="methodology-title">Experimentação</h3>
+            <p class="methodology-desc">Seu agente ganha identidade e função: você o promove a gestor, contrata agentes especialistas e treina o time para trabalhar coordenado.</p>
+          </div>
+          <!-- Phase 3 -->
+          <div class="methodology-card scroll-reveal" style="transition-delay: 0.2s;">
+            <div class="methodology-number">03</div>
+            <h3 class="methodology-title">Expertise</h3>
+            <p class="methodology-desc">Sua operação vai para um servidor dedicado e passa a funcionar 24 horas por dia, 7 dias por semana — sem depender do seu computador.</p>
+          </div>
+          <!-- Phase 4 -->
+          <div class="methodology-card scroll-reveal" style="transition-delay: 0.3s;">
+            <div class="methodology-number">04</div>
+            <h3 class="methodology-title">Escala</h3>
+            <p class="methodology-desc">Com a base funcionando, você multiplica: novos agentes, novos departamentos e uma organização que cresce sem crescer a folha.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Evolution Section -->
+    <section class="evolution-section" id="evolucao">
+      <div class="evolution-container">
+        <div class="evolution-header scroll-reveal">
+          <span class="section-label">A EVOLUÇÃO</span>
+          <h2 class="section-title">De um profissional a uma organização inteira</h2>
+          <p class="section-desc">A transformação agêntica não começa pela empresa toda. Começa por uma pessoa — e se multiplica.</p>
         </div>
         
-        <div class="pe-stats scroll-reveal" style="transition-delay: 0.2s;">
-          <div class="stat-item">
-            <span class="stat-number">+200</span>
-            <span class="stat-label">Profissionais formados</span>
+        <div class="evolution-grid">
+          <!-- Level 1 -->
+          <div class="evolution-card scroll-reveal">
+            <svg viewBox="0 0 100 100" class="evo-svg">
+              <circle cx="50" cy="80" r="10" fill="#1A3A5C" class="base-node" />
+            </svg>
+            <div class="evolution-number">01</div>
+            <h3 class="evolution-title">Profissional agêntico</h3>
+            <p class="evolution-desc">Uma pessoa capacitada para modelar, construir e gerenciar agentes de IA. É quem sai da imersão: alguém que domina o método e opera seu primeiro funcionário agêntico.</p>
           </div>
-          <div class="stat-item">
-            <span class="stat-number">+50</span>
-            <span class="stat-label">Agentes construídos</span>
+          <!-- Level 2 -->
+          <div class="evolution-card scroll-reveal" style="transition-delay: 0.15s;">
+            <svg viewBox="0 0 100 100" class="evo-svg">
+              <path d="M50,80 L50,50 L20,20 M50,50 L50,20 M50,50 L80,20" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-1" />
+              <circle cx="50" cy="80" r="10" fill="#1A3A5C" class="base-node" />
+              <circle cx="20" cy="20" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
+              <circle cx="50" cy="20" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
+              <circle cx="80" cy="20" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
+            </svg>
+            <div class="evolution-number">02</div>
+            <h3 class="evolution-title">Departamento agêntico</h3>
+            <p class="evolution-desc">O profissional aplica o método no seu setor: agentes assumem as tarefas repetitivas do departamento, coordenados por um agente gestor — e a equipe foca no que exige gente.</p>
           </div>
-          <div class="stat-item">
-            <span class="stat-number">98%</span>
-            <span class="stat-label">Aprovação prática</span>
+          <!-- Level 3 -->
+          <div class="evolution-card scroll-reveal" style="transition-delay: 0.3s;">
+            <svg viewBox="0 0 100 100" class="evo-svg">
+              <!-- Central node -->
+              <path d="M50,80 L50,55" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-1" />
+              <!-- Branches -->
+              <path d="M50,55 L20,40 M50,55 L50,30 M50,55 L80,40" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-1" />
+              <!-- Sub-branches left -->
+              <path d="M20,40 L10,20 M20,40 L30,20" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-2" />
+              <!-- Sub-branches center -->
+              <path d="M50,30 L40,10 M50,30 L60,10" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-2" />
+              <!-- Sub-branches right -->
+              <path d="M80,40 L70,20 M80,40 L90,20" stroke="#1A3A5C" stroke-width="1.5" fill="none" class="branch-2" />
+              
+              <circle cx="50" cy="80" r="10" fill="#1A3A5C" class="base-node" />
+              
+              <circle cx="20" cy="40" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
+              <circle cx="50" cy="30" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
+              <circle cx="80" cy="40" r="6" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="sec-node" />
+              
+              <circle cx="10" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
+              <circle cx="30" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
+              <circle cx="40" cy="10" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
+              <circle cx="60" cy="10" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
+              <circle cx="70" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
+              <circle cx="90" cy="20" r="4" stroke="#1A3A5C" stroke-width="1.5" fill="var(--bg-color)" class="tert-node" />
+            </svg>
+            <div class="evolution-number">03</div>
+            <h3 class="evolution-title">Organização agêntica</h3>
+            <p class="evolution-desc">O modelo se expande para toda a empresa: departamentos operando com times de agentes integrados, processos fluindo 24 horas por dia e pessoas dedicadas a decidir, criar e crescer.</p>
+          </div>
+        </div>
+
+        <div class="evolution-footer scroll-reveal" style="transition-delay: 0.4s;">
+          <p class="evolution-footer-text">A imersão é o primeiro passo: é onde nasce o profissional agêntico.</p>
+          <a href="#inscricao" class="evolution-cta">Garantir minha vaga <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Schedule Section -->
+    <section class="schedule-section" id="cronograma">
+      <div class="schedule-container">
+        <div class="schedule-header scroll-reveal">
+          <span class="section-label">a rotina</span>
+          <h2 class="section-title">Programação do dia</h2>
+        </div>
+        <div class="schedule-grid">
+          <!-- Schedule Item 1 -->
+          <div class="schedule-item scroll-reveal">
+            <div class="schedule-time">08h00 - 09h00</div>
+            <div class="schedule-content">
+              <h4 class="schedule-event">Credenciamento e boas-vindas</h4>
+              <p>Recepção dos participantes, café e preparação do ambiente.</p>
+            </div>
+          </div>
+          <!-- Schedule Item 2 -->
+          <div class="schedule-item scroll-reveal">
+            <div class="schedule-time">09h00 - 12h30</div>
+            <div class="schedule-content">
+              <h4 class="schedule-event">Construção guiada</h4>
+              <p>Modelagem do processo, configuração do ambiente e criação do seu primeiro agente por linguagem natural.
+              </p>
+            </div>
+          </div>
+          <!-- Schedule Item 3 -->
+          <div class="schedule-item scroll-reveal">
+            <div class="schedule-time">12h30 - 14h00</div>
+            <div class="schedule-content">
+              <h4 class="schedule-event">Intervalo para almoço (livre)</h4>
+            </div>
+          </div>
+          <!-- Schedule Item 4 -->
+          <div class="schedule-item scroll-reveal">
+            <div class="schedule-time">14h00 - 17h00</div>
+            <div class="schedule-content">
+              <h4 class="schedule-event">Operação e evolução</h4>
+              <p>Seu agente executando tarefas reais: testes, ajustes e os caminhos para evoluir para uma equipe de
+                agentes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="speaker-section" id="palestrantes">
+      <div class="speaker-container">
+        <div class="speaker-visual scroll-reveal">
+          <div class="speaker-photo-placeholder"></div>
+        </div>
+        <div class="speaker-content scroll-reveal" style="transition-delay: 0.2s;">
+          <span class="section-label">quem lidera</span>
+          <h2 class="section-title">Bruno Bessa, PhD</h2>
+          <p class="speaker-role">Fundador da IA PhD</p>
+          <div class="speaker-bio">
+            <p>Pesquisador, professor e empreendedor que une rigor acadêmico à implementação real de inteligência
+              artificial em empresas.</p>
+          </div>
+          <div class="speaker-badges">
+            <span class="badge">Doutor em Ciências da Computação — UFPE</span>
+            <span class="badge">Mestre em Engenharia de Software</span>
+            <span class="badge">Professor no Instituto Federal de Alagoas (IFAL)</span>
+            <span class="badge">Diretor de Tecnologia e Inovação — Assespro-AL</span>
           </div>
         </div>
       </div>
@@ -162,8 +387,9 @@
     <section class="gallery-section">
       <div class="gallery-container">
         <div class="gallery-header scroll-reveal">
-          <span class="section-label">Galeria</span>
+          <span class="section-label">galeria</span>
           <h2 class="section-title">O que acontece na imersão</h2>
+          <p class="section-desc">fotos reais da edição de Arapiraca </p>
         </div>
 
         <div class="gallery-grid">
@@ -193,104 +419,17 @@
       <div class="aftermovie-container scroll-reveal">
         <div class="aftermovie-wrapper">
           <div class="aftermovie-placeholder">
-            <svg class="play-icon large-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+            <svg class="play-icon large-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="10 8 16 12 10 16 10 8"></polygon>
+            </svg>
           </div>
         </div>
         <div class="aftermovie-caption" style="text-align: center; margin-top: 2rem;">
+          <p style="margin-bottom: 1rem; color: var(--text-secondary);">Assista ao aftermovie da 1ª edição, em Arapiraca
+          </p>
           <button id="btn-more-photos" class="btn btn-outline-nav">Ver mais fotos da imersão</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Differentials Section -->
-    <section class="differentials-section">
-      <div class="diff-container">
-        <div class="diff-header scroll-reveal">
-          <span class="section-label">Diferenciais</span>
-          <h2 class="section-title">O que nos separa do mercado</h2>
-        </div>
-        <div class="diff-grid">
-          <div class="diff-card scroll-reveal">
-            <div class="diff-icon">01</div>
-            <h3 class="diff-title">Sem teoria vazia</h3>
-            <p class="diff-desc">Enquanto a maioria discute o futuro, nós construímos ferramentas que resolvem os problemas de hoje na sua empresa.</p>
-          </div>
-          <div class="diff-card scroll-reveal" style="transition-delay: 0.1s;">
-            <div class="diff-icon">02</div>
-            <h3 class="diff-title">Mão na massa</h3>
-            <p class="diff-desc">Não é sobre assistir palestras. É sobre sentar com seu time e codificar o primeiro funcionário agêntico do seu negócio.</p>
-          </div>
-          <div class="diff-card scroll-reveal" style="transition-delay: 0.2s;">
-            <div class="diff-icon">03</div>
-            <h3 class="diff-title">Framework validado</h3>
-            <p class="diff-desc">Utilizamos o mesmo método aplicado em empresas de alto padrão para escalar operações através de inteligência artificial.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Schedule Section -->
-    <section class="schedule-section" id="cronograma">
-      <div class="schedule-container">
-        <div class="schedule-header scroll-reveal">
-          <span class="section-label">A ROTINA</span>
-          <h2 class="section-title">Programação do evento</h2>
-        </div>
-        <div class="schedule-grid">
-          <!-- Schedule Item 1 -->
-          <div class="schedule-item scroll-reveal">
-            <div class="schedule-time">08:00 - 09:00</div>
-            <div class="schedule-content">
-              <h4 class="schedule-event">Credenciamento & Networking</h4>
-              <p>Recepção dos participantes e café de boas-vindas.</p>
-            </div>
-          </div>
-          <!-- Schedule Item 2 -->
-          <div class="schedule-item scroll-reveal">
-            <div class="schedule-time">09:00 - 12:30</div>
-            <div class="schedule-content">
-              <h4 class="schedule-event">Mergulho Prático</h4>
-              <p>Sessões de construção guiada, estruturação de fluxos lógicos e integração de IA.</p>
-            </div>
-          </div>
-          <!-- Schedule Item 3 -->
-          <div class="schedule-item scroll-reveal">
-            <div class="schedule-time">12:30 - 14:00</div>
-            <div class="schedule-content">
-              <h4 class="schedule-event">Intervalo (Almoço Livre)</h4>
-            </div>
-          </div>
-          <!-- Schedule Item 4 -->
-          <div class="schedule-item scroll-reveal">
-            <div class="schedule-time">14:00 - 18:00</div>
-            <div class="schedule-content">
-              <h4 class="schedule-event">Execução & Escala</h4>
-              <p>Testes de performance, depuração de erros em agentes e dinâmicas de segurança corporativa.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Speakers Section -->
-    <section class="speaker-section" id="palestrantes">
-      <div class="speaker-container">
-        <div class="speaker-visual scroll-reveal">
-          <div class="speaker-photo-placeholder"></div>
-        </div>
-        <div class="speaker-content scroll-reveal" style="transition-delay: 0.2s;">
-          <span class="section-label">Quem Lidera</span>
-          <h2 class="section-title">Bruno Bessa, PhD</h2>
-          <p class="speaker-role">Fundador & Engenheiro Chefe na IA PhD</p>
-          <div class="speaker-bio">
-            <p>Pesquisador, professor e empreendedor que une rigor acadêmico à implementação real de inteligência artificial corporativa.</p>
-            <p>Com mais de 10 anos de experiência em pesquisa acadêmica e mercado, Bruno é o arquiteto por trás da metodologia que está transformando grandes corporações em organizações totalmente agênticas.</p>
-          </div>
-          <div class="speaker-badges">
-            <span class="badge">PhD em Sistemas de IA</span>
-            <span class="badge">+15 anos de tecnologia</span>
-            <span class="badge">Especialista em LLM Orchestration</span>
-          </div>
         </div>
       </div>
     </section>
@@ -299,35 +438,73 @@
     <section class="testimonials-section">
       <div class="test-container">
         <div class="test-header scroll-reveal">
-          <span class="section-label">Prova Social</span>
-          <h2 class="section-title">O que dizem os participantes</h2>
+          <span class="section-label">quem já viveu</span>
+          <h2 class="section-title">O que dizem os participantes da 1ª edição</h2>
         </div>
-        <div class="test-grid">
-          <!-- Text Testimonial -->
-          <div class="test-card scroll-reveal">
-            <p class="test-quote">"A imersão mudou completamente a nossa percepção sobre inteligência artificial. Saímos do evento com o nosso primeiro agente já rodando internamente."</p>
-            <div class="test-author">
-              <div class="test-avatar"></div>
-              <div class="test-info">
-                <span class="test-name">Carlos Eduardo</span>
-                <span class="test-role">CTO, Tech Solutions</span>
+        <div class="test-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+          <!-- Video Testimonial 1 -->
+          <div class="test-card-video scroll-reveal">
+            <div class="video-wrapper" style="aspect-ratio: 9/16; border-radius: 12px;">
+              <video class="testimonial-video" width="100%" muted playsinline
+                style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="assets/IMG_9349.mp4" type="video/mp4">
+              </video>
+              <div class="custom-video-controls">
+                <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+                <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path
+                      d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
-          <!-- Video Testimonial Placeholder -->
+          <!-- Video Testimonial 2 -->
           <div class="test-card-video scroll-reveal" style="transition-delay: 0.1s;">
-            <div class="test-video-placeholder">
-              <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+            <div class="video-wrapper" style="aspect-ratio: 9/16; border-radius: 12px;">
+              <video class="testimonial-video" width="100%" muted playsinline
+                style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="assets/IMG_9351.mp4" type="video/mp4">
+              </video>
+              <div class="custom-video-controls">
+                <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+                <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path
+                      d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-          <!-- Text Testimonial -->
-          <div class="test-card scroll-reveal" style="transition-delay: 0.2s;">
-            <p class="test-quote">"O nível técnico é altíssimo, mas a metodologia do Bruno Bessa torna tudo tangível. Não é apenas mais um evento sobre IA, é construção pura."</p>
-            <div class="test-author">
-              <div class="test-avatar"></div>
-              <div class="test-info">
-                <span class="test-name">Mariana Silva</span>
-                <span class="test-role">Diretora de Inovação</span>
+          <!-- Video Testimonial 3 -->
+          <div class="test-card-video scroll-reveal" style="transition-delay: 0.2s;">
+            <div class="video-wrapper" style="aspect-ratio: 9/16; border-radius: 12px;">
+              <video class="testimonial-video" width="100%" muted playsinline
+                style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="assets/IMG_9357.mp4" type="video/mp4">
+              </video>
+              <div class="custom-video-controls">
+                <button class="ctrl-btn play-pause-btn" aria-label="Play/Pausar">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+                <button class="ctrl-btn mute-unmute-btn" aria-label="Ativar/Desativar som">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path
+                      d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -339,17 +516,18 @@
     <section class="location-section" id="local">
       <div class="location-container">
         <div class="location-content scroll-reveal">
-          <span class="section-label">O Local</span>
+          <span class="section-label">o local</span>
           <h2 class="section-title">Maceió, Alagoas</h2>
-          <p class="section-desc">Uma imersão de altíssimo nível em uma das cidades mais bonitas do Brasil. Concilie conhecimento de fronteira com um ambiente inspirador.</p>
+          <p class="section-desc">Um dia inteiro de construção prática em Maceió. Traga seu notebook e um problema real
+            do seu negócio — o resto a gente constrói juntos.</p>
           <div class="location-details">
             <div class="loc-item">
               <h4 class="loc-title">Data</h4>
-              <p>A ser anunciada</p>
+              <p>25 de julho de 2026 · 08h às 17h</p>
             </div>
             <div class="loc-item">
               <h4 class="loc-title">Local</h4>
-              <p>Centro de Convenções Premium (A definir)</p>
+              <p>Local em confirmação — os inscritos serão avisados em primeira mão</p>
             </div>
           </div>
         </div>
@@ -371,24 +549,26 @@
           <!-- FAQ 1 -->
           <div class="faq-item scroll-reveal">
             <button class="faq-question">
-              Preciso ser programador para participar?
+              Preciso saber programar?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                Não. A imersão é projetada tanto para gestores quanto para profissionais técnicos. Focamos em arquitetura, orquestração e uso de plataformas que facilitam a criação de agentes sem a necessidade de codificação profunda, embora conhecimentos básicos de lógica sejam recomendados.
+                Não. Todo o processo é feito por linguagem natural — você configura o agente conversando com ele. Ter
+                noções de lógica ajuda, mas não é requisito.
               </div>
             </div>
           </div>
           <!-- FAQ 2 -->
           <div class="faq-item scroll-reveal">
             <button class="faq-question">
-              O que vou sair construindo?
+              O que eu saio construindo?
               <span class="faq-icon">+</span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                Você sairá com um funcionário agêntico funcional, integrado aos sistemas ou bases de dados da sua empresa, pronto para operar e resolver um problema específico que desenharemos juntos durante a imersão.
+                Um funcionário agêntico funcional, configurado para um problema real do seu negócio, operando de verdade
+                — além do método para evoluir para uma equipe de agentes.
               </div>
             </div>
           </div>
@@ -400,7 +580,33 @@
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                Sim, temos condições especiais para grupos corporativos. A construção de agentes em equipe durante a imersão tem se mostrado o modelo mais eficiente de implementação pós-evento.
+                Sim. Construir em equipe acelera a implementação depois do evento. Fale com a gente para condições de
+                grupos.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="faq-item scroll-reveal">
+            <button class="faq-question">
+              O que está incluso?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Um dia inteiro de imersão presencial, ambiente configurado, suporte de PhDs durante toda a construção e
+                os templates da metodologia IA PhD.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 5 -->
+          <div class="faq-item scroll-reveal">
+            <button class="faq-question">
+              Quanto custa?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                R$ 477,90 (pagamento único). As vagas são limitadas pelo formato prático da imersão.
               </div>
             </div>
           </div>
@@ -411,10 +617,10 @@
     <!-- Final CTA Section -->
     <section class="cta-section" id="inscricao">
       <div class="cta-container scroll-reveal">
-        <h2 class="cta-title">A mudança começa na sua operação</h2>
-        <p class="cta-desc">Transforme a eficiência da sua empresa construindo funcionários de IA que executam tarefas reais, 24 horas por dia.</p>
+        <h2 class="cta-title">Sua empresa pode sair dessa imersão operando com IA</h2>
+        <p class="cta-desc">24 de julho, em Maceió. Um dia. Um agente real funcionando. Vagas limitadas.</p>
         <div class="cta-actions">
-          <a href="#" class="btn btn-primary">Garantir minha vaga</a>
+          <a href="[INSERIR LINK DE INSCRIÇÃO]" class="btn btn-primary">Garantir minha vaga — R$ 477,90</a>
         </div>
       </div>
     </section>
@@ -425,7 +631,11 @@
     <div class="modal-overlay" id="modal-overlay"></div>
     <div class="modal-content">
       <button id="modal-close" class="modal-close" aria-label="Fechar galeria">
-        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
       </button>
       <div class="modal-header">
         <h3 class="modal-title">Galeria Completa</h3>
@@ -438,7 +648,9 @@
 
   <footer class="main-footer">
     <div class="footer-container">
-      <p>&copy; 2026 IA PhD. Todos os direitos reservados.</p>
+      <p>&copy; 2026 IA PhD. Todos os direitos reservados. | <a href="https://instagram.com/ia.phd"
+          style="color: inherit; text-decoration: none;">@ia.phd</a> | <a href="[INSERIR LINK SITE INSTITUCIONAL]"
+          style="color: inherit; text-decoration: none;">Site institucional</a></p>
     </div>
   </footer>
 
