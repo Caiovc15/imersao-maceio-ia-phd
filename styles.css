@@ -1462,6 +1462,73 @@ body {
   transform: scale(1.05);
 }
 
+/* Objection Section */
+.objection-section {
+  padding: 6rem 2rem;
+  background-color: var(--bg-color);
+}
+.objection-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.objection-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.objection-desc {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  max-width: 700px;
+  margin: 1rem auto 0;
+  line-height: 1.5;
+}
+.objection-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.objection-card {
+  width: calc(33.333% - 1rem);
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .objection-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+}
+.objection-icon {
+  width: 32px;
+  height: 32px;
+  color: #1A3A5C;
+}
+.objection-card p {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 400;
+  color: #0A0A0A;
+  margin: 0;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .objection-card {
+    width: 100%;
+  }
+}
+
 /* Deliverables Section */
 .deliverables-section {
   padding: 6rem 2rem;
